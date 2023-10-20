@@ -9,10 +9,10 @@ import (
 )
 
 func init() {
-	functions.HTTP("petapedia", petaPediaPost)
+	functions.HTTP("petapedia", petaSal2Pos)
 }
 
-func petaPediaPost(w http.ResponseWriter, r *http.Request) {
+func petaSal2Pos(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://jscroot.github.io")
