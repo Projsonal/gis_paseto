@@ -27,3 +27,7 @@ func petaSal2Pos(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, peda.GCFPostHandler("PASETOPRIVATEKEY", "MONGOJAMBE", "petapedia", "user", r))
 
 }
+
+func GetToken(r *http.Request) string {
+    return r.Header.Get("Authorization")
+}
